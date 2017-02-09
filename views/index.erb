@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+  <head lang="en">
+
+    <meta charset="utf-8">
+    <title>Caesar Cipher</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/icon.png">
+	  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  </head>
+
+  <body>
+
+  	<div class="container">
+      <h1><a href="https://en.wikipedia.org/wiki/Caesar_cipher" target="_blank">Caesar Cipher</a></h1>
+
+  		<form method="GET">
+  			<textarea class="text-area" name="text" placeholder="What would you like to encrypt?"></textarea>
+  			<input type="text" name="shift" placeholder="Shift Factor">
+  			<input type="submit" name="action" value="Encrypt">
+  		</form>
+
+  		<% if caesar.length > 0 %>
+  			<p class="msg">Your encrypted message is<br><%= caesar %></p>
+  		<% end %>
+
+  	</div>
+
+  	<div class="footer navbar-fixed-bottom">
+  		<p>
+  			Coded by: <a href="https://github.com/youssef1337" target="_blank">Youssef Sobhy</a>
+  		</p>
+  	</div>
+
+  </body>
+
+</html>
